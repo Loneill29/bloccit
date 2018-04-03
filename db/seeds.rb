@@ -23,7 +23,7 @@ Post.find_or_create_by(title: "A unique title", body: "A unique body")
 puts "#{Post.count}"
 
 puts "#{Comment.count}"
-Comment.find_or_create_by(body: "A unique comment",  post_id: 101)
+Comment.find_or_create_by(post_id: Post.find_by(title: "A unique title", body: "A unique body", body: "A unique comment"))
 puts "#{Comment.count}"
 
 puts "Seed finished"
