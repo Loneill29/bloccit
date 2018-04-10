@@ -23,7 +23,7 @@ posts = Post.all
 20.times do
   SponsoredPost.create!(
     topic: topics.sample,
-    title: "Sponsored Post",
+    title: "Sponsored",
     body:   RandomData.random_paragraph,
     price:  99
 
