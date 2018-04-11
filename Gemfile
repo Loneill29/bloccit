@@ -16,7 +16,9 @@ source 'https://rubygems.org'
  end
 
 gem 'bootstrap-sass'
- # #2
+
+gem 'bcrypt'
+
  group :development do
    # Use sqlite3 as the development database for Active Record
    gem 'sqlite3'
