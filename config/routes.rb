@@ -10,6 +10,8 @@ resources :users, only: [:new, :create]
 
 resources :posts
 
+resources :sessions, only: [:new, :create, :destroy]
+
 get 'about' => 'welcome#about'
 
 root 'welcome#index'
