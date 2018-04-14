@@ -1,11 +1,5 @@
 require 'random_data'
 
-user = User.first
-user.update_attributes!(
-  email: 'oneill.linda21@gmail.com',
-  password: 'helloworld'
-)
-
 5.times do
   User.create!(
 
@@ -15,6 +9,12 @@ user.update_attributes!(
   )
 end
 users = User.all
+
+user = User.first
+user.update_attributes!(
+  email: 'oneill.linda21@gmail.com',
+  password: 'helloworld'
+)
 
 15.times do
   Topic.create!(
