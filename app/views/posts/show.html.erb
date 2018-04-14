@@ -1,5 +1,8 @@
 <h1>
   <%= @post.title %> <br>
+  <% if current_user.moderator? %>
+    <%= link_to "Edit Post", edit_post_path, class: 'btn btn-success' %>
+  <% end %>
   <small>
     submitted <%= time_ago_in_words(@post.created_at) %> ago by <%= @post.user.name %>
   </small>
