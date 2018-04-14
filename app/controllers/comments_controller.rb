@@ -40,7 +40,7 @@ class CommentsController < ApplicationController
       redirect_to [comment.post.topic, comment.post]
     end
   end
-  
+
   def comment_params
     params.require(:comment).permit(:body)
   end
