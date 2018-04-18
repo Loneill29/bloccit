@@ -20,19 +20,11 @@
  </div>
  <div class="col-md-4">
     <h2>Posts</h2>
-    <% if user_has_posts? %>
-      <%= render @user.posts %>
-    <% else %>
-      <p><%= @user.name %> has not written any posts.</p>
-    <% end %>
+      <%= user_has_posts? %>
   </div>
   <div class="col-md-4">
     <h2>Comments</h2>
-    <% if user_has_comments? %>
-      <%= render @user.comments %>
-    <% else %>
-      <p><%= @user.name %> has not written any comments.</p>
-    <% end %>
+      <%= user_has_comments? %>
   </div>
   <div class="col-md-4">
      <h2>Favorites</h2>
